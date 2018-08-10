@@ -8,7 +8,7 @@
 //import org.springframework.context.annotation.Configuration;
 //
 //@Configuration
-//public class RpcConfig {
+//public class RpcZKConfig {
 //
 //    @Value("${zkAddress}")
 //    private String zkAddress;

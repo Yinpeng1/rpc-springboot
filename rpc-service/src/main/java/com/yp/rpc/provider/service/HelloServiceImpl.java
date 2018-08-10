@@ -14,8 +14,8 @@ public class HelloServiceImpl implements HelloService {
 
     @Override
     public String hello(String name) {
-        String nm = userMapper.getUserName(1);
-        return nm;
+        String nm = userMapper.getUserName(Integer.valueOf(name));
+        return "Hello!" + nm;
 //        return "Hello! " + name;
     }
 
