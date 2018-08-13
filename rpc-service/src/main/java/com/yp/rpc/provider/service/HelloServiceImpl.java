@@ -23,4 +23,12 @@ public class HelloServiceImpl implements HelloService {
     public String hello(Person person) {
         return "Hello! " + person.getFirstName() + " " + person.getLastName();
     }
+
+    @Override
+    public Person getPeople(String s) {
+        Person person = new Person();
+        person.setFirstName("firstName "+ s);
+        person.setLastName("lastName " + s);
+        return person;
+    }
 }
